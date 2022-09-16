@@ -34,6 +34,7 @@ public class Leitor {
             for (int i = 0; i < data.size() ; i++){
                 novoArquivo.println(data.get(i));
             }
+            data.clear();
             writer.close();
         } catch (IOException e){
             System.err.println("Erro na criação do arquivo: " + e.getMessage());
